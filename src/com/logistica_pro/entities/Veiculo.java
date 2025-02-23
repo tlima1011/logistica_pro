@@ -22,6 +22,19 @@ public abstract class Veiculo {
 	private static boolean ligado = false ; 
 	private int velocidadeAtual = 0; 
 	
+	public boolean getStatus() {
+		return ligado;
+	}
+	
+	public int getVelocidadeMinima() {
+		return VELOCIDADE_MINIMA;
+	}
+	
+	public Veiculo() { 
+		this.idVeiculo = ultimoCodigo++; 
+		this.ligado = false; 
+	}
+	
 	public void ligar() { 
 		System.out.println("Veiculo ligado");
 		ligado = true; 
