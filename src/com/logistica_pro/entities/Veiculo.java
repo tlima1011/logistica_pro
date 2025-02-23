@@ -4,6 +4,7 @@ import com.logistica_pro.enums.Combustivel;
 
 public abstract class Veiculo {
 	
+	private static int ultimoCodigo = 1; 
 	private int idVeiculo; 
 	private String renavam; 
 	private String modelo; 
@@ -18,8 +19,34 @@ public abstract class Veiculo {
 	private Combustivel tipoCombustivel; 
 	private double capacidadeTanque; 
 	private double kml;  
+	private static boolean ligado = false ; 
+	private int velocidadeAtual = 0; 
 	
+	public void ligar() { 
+		System.out.println("Veiculo ligado");
+		ligado = true; 
+	}
 	
+	public void desligar() { 
+		System.out.println("Veiculo desligado");
+		ligado = false; 
+	}
+	
+	public void aumentarVelocidade(int v) { 
+		if(ligado == true && velocidadeAtual > 0) { 
+			this.velocidadeAtual = v;
+		}else {
+			System.out.println("Veículo não ligado, ligue-o");
+		}
+	}
+	
+	public void diminuirVelocidade(int v) { 
+		if(ligado == true && velocidadeAtual > 0) {
+			this.velocidadeAtual = velocidadeAtual - v; 
+		}else {
+			System.out.println("Inválido");
+		}
+	}
 	
 	
 	
