@@ -22,6 +22,23 @@ public abstract class Veiculo {
 	private static boolean ligado = false ; 
 	private int velocidadeAtual = 0; 
 	
+	
+	public void setModelo(String m) {
+		this.modelo = m; 
+	}
+	
+	public String getModelo() {
+		return this.modelo; 
+	}
+	
+	public void setAno(int a) {
+		this.ano = a; 
+	}
+	
+	public int getAno() {
+		return ano; 
+	}
+	
 	public boolean getStatus() {
 		return ligado;
 	}
