@@ -37,6 +37,14 @@ public class Locacao {
 
 	public int getPeriodo() {
 		return periodo;
+	}	
+	
+	public void setValorUnitario(double vu) {
+		this.valorUnitario = vu; 
+	}
+	
+	public double getValorUnitario() {
+		return valorUnitario; 		
 	}
 		
 	public void adicionarCliente(Cliente c) {
