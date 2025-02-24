@@ -1,9 +1,9 @@
 package com.logistica_pro.app;
 
-import com.logistica_pro.entities.Carro;
-import com.logistica_pro.entities.Moto;
-import com.logistica_pro.entities.Van;
-import com.logistica_pro.entities.Veiculo;
+import com.logistica_pro.entities.autos.Carro;
+import com.logistica_pro.entities.autos.Moto;
+import com.logistica_pro.entities.autos.Van;
+import com.logistica_pro.entities.autos.Veiculo;
 
 public class Main {
 
@@ -36,6 +36,8 @@ public class Main {
 		System.out.println("Modelo: "+topic.getModelo() + " - Ano: "+ topic.getAno());
 		System.out.println(topic.getStatus());
 		System.out.println(topic.getVelocidadeMinima());
+		
+		topic.ligar(); 
 				
 
 	}

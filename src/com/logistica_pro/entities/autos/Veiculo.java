@@ -1,4 +1,4 @@
-package com.logistica_pro.entities;
+package com.logistica_pro.entities.autos;
 
 import com.logistica_pro.enums.Combustivel;
 
