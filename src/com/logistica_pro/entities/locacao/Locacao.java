@@ -38,7 +38,7 @@ public class Locacao {
 	public int getPeriodo() {
 		return periodo;
 	}
-	
+		
 	public void adicionarCliente(Cliente c) {
 		cliente.add(c); 
 	}

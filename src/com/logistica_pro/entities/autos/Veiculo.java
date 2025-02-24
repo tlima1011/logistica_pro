@@ -1,5 +1,5 @@
 package com.logistica_pro.entities.autos;
-
+import com.logistica_pro.entities.locacao.Locacao;
 import com.logistica_pro.enums.Combustivel;
 
 public abstract class Veiculo {
@@ -21,7 +21,7 @@ public abstract class Veiculo {
 	private double kml;  
 	private static boolean ligado = false ; 
 	private int velocidadeAtual = 0; 
-	
+	private Locacao locacao;
 	
 	public void setModelo(String m) {
 		this.modelo = m; 
@@ -77,10 +77,4 @@ public abstract class Veiculo {
 			System.out.println("Inválido");
 		}
 	}
-	
-	
-	
-	
-	
-
 }

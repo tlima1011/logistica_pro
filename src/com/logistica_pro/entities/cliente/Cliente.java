@@ -1,5 +1,7 @@
 package com.logistica_pro.entities.cliente;
 
+import com.logistica_pro.entities.locacao.Locacao;
+
 public abstract class Cliente { 
 	
 	private static int ultimoCodigo = 1; 
@@ -7,6 +9,7 @@ public abstract class Cliente {
 	private String nome; 
 	private String cnh; 
 	private String email; 
+	private Locacao locacao; 
 	
 	public Cliente() {
 		this.idCliente = ultimoCodigo++; 
